@@ -3,9 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" type="module"></script>
     <title>Mobile Restaurant Menu</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+      </header>
+      <main>
+        <div class="dishes">
+          <article class="card">
+            <p>🍕</p>
+            <h2>Pizza</h2>
+            <small>pepperoni, mushroom, mozarella</small>
+            <p>14$</p>
+            <!-- + svg -->
+          </article>
+          <article class="card">
+            <p>🍔</p>
+            <h2>Hamburguer</h2>
+            <small>beef, cheese, lettuce</small>
+            <p>12$</p>
+            <!-- + svg -->
+          </article>
+          <article class="card">
+            <p>🍺</p>
+            <h2>Beer</h2>
+            <small>grain, hops, yeast, water</small>
+            <p>12$</p>
+            <!-- + svg -->
+          </article>
+        </div>
+        <div>
+          <h2>Your order</h2>
+          <div class="dish">
+            <p>Pizza</p>
+            <button>remove</button>
+            <p>14$</p>
+          </div>
+          <div class="dish">
+            <p>Beer</p>
+            <button>remove</button>
+            <p>12$</p>
+          </div>
+          <div class="total-price">
+            <hr />
+            <p>Total price:</p>
+            <p>26$</p>
+            <button>Complete order</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="pay-modal">
+      <h2>Enter card details</h2>
+      <form>
+        <input type="text" placeholder="Enter your name" />
+        <input type="text" placeholder="Enter card number" />
+        <input type="text" placeholder="Enter CVV" />
+        <button type="submit">Pay</button>
+      </form>
+      <!-- After payment replace text:
+       "Thanks, James! Your order is on its way!" -->
+    </div>
+  </body>
 </html>
